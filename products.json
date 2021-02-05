@@ -1,0 +1,23 @@
+[
+  {
+    "id": "price_1IHUCoKLmjDGA1H4jT2RJ37t",
+    "title": "Darth Vader Helmet",
+    "description": "Fans can portray the greatest battles and missions from the Star Wars saga with the helmets from The Black Series!",
+    "image": "/images/dvhelmet.jpg",
+    "price": 199.0
+  },
+  {
+    "id": "price_1IHUJ7KLmjDGA1H4DyZwOSaV",
+    "title": "LEGO Star Wars AT-AT",
+    "description": " The buildable, posable AT-AT Walker comes with Luke Skywalker, General Veers and other LEGO minifigures.",
+    "image": "/images/atat.jpg",
+    "price": 899.0
+  },
+  {
+    "id": "price_1IHUJYKLmjDGA1H4MFfPRpfT",
+    "title": "Metal Death Star",
+    "description": "Take on the challenge of building your own detailed Death Star with this laser-cut Metal Earth 3D model kit!",
+    "image": "/images/metaldeathstar.jpg",
+    "price": 39.99
+  }
+]

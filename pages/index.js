@@ -1,6 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
+import products from "../products.json";
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -17,36 +19,19 @@ export default function Home() {
         </p>
 
         <ul className={styles.grid}>
-          <li className={styles.card}>
-            <a href="https://nextjs.org/docs">
-              <img src="/images/dvhelmet.jpg" alt="Darth Vader Helmet" />
-              <h3>Darth Vader Helmet</h3>
-              <p>
-                Fans can portray the greatest battles and missions from the Star
-                Wars saga with the helmets from The Black Series!{" "}
-              </p>
-            </a>
-          </li>
-          <li className={styles.card}>
-            <a href="https://nextjs.org/learn">
-              <img src="/images/atat.jpg" alt="LEGO AT-AT" />
-              <h3>LEGO Star Wars AT-AT</h3>
-              <p>
-                The buildable, posable AT-AT Walker comes with Luke Skywalker,
-                General Veers and other LEGO minifigures.
-              </p>
-            </a>
-          </li>
-          <li className={styles.card}>
-            <a href="https://github.com/vercel/next.js/tree/master/examples">
-              <img src="/images/metaldeathstar.jpg" alt="Metal Death Star" />
-              <h3> Death Star 7.5 Cm &rarr;</h3>
-              <p>
-                Take on the challenge of building your own detailed Death Star
-                with this laser-cut Metal Earth 3D model kit!{" "}
-              </p>
-            </a>
-          </li>
+          {products.map((product) => {
+            const { id, title, price, description, image } = product;
+            return (
+              <li className={styles.card} key={id}>
+                <a href="https://nextjs.org/docs">
+                  <img src={image} alt={title} />
+                  <h3>{title}</h3>
+                  <p>{price}</p>
+                  <p>{description}</p>
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </main>
 
