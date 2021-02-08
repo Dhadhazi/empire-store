@@ -79,6 +79,7 @@ export function useCartState() {
     quantity,
     addToCart,
     checkout,
+    cartItems,
   };
 }
 
